@@ -1,0 +1,369 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --black: #5b5a5a;
+    --graybg: #f2f2f2;
+    --box-shadow: none;
+  }
+  
+  /* tab header */
+  .tab-card {
+  }
+  
+  .tab-navlink {
+    background-color: transparent;
+    color: var(--black) !important;
+    font-size: 15px;
+  
+    &.active {
+      background-color: transparent !important;
+      color: var(--blue) !important;
+      border-bottom: 3px solid var(--blue) !important;
+      border-radius: 0;
+    }
+  }
+  
+  .cus-tab-head {
+    background-color: var(--graybg);
+    /* border-bottom: 1px solid rgb(67, 67, 67)!important; */
+  }
+  
+  /* radio */
+  .radio-cus {
+    box-shadow: var(--box-shadow) !important;
+  }
+  
+  .radiobox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cus-select {
+    display: inline-block !important;
+    color: var(--blue) !important;
+    border: none;
+    outline: none;
+  }
+  
+  .line {
+    width: 1px;
+    margin-right: 5px;
+    height: 18px;
+    background-color: #cfb7b7 !important;
+  }
+  
+  .mainbox-input {
+    display: flex;
+    margin: 10px;
+    grid-gap: 10px;
+    position: relative;
+  }
+  
+  .cus-control {
+    box-shadow: none !important;
+    border: 0;
+  }
+  
+  .cus-control-date {
+    width: 100px;
+    box-shadow: none !important;
+    border: 0;
+  }
+  
+  .cus-control-person {
+    width: 60px;
+    box-shadow: none !important;
+    border: 0;
+  }
+  
+  .cus-lable {
+    gap: 10px;
+    display: flex;
+    border: 1px solid var(--black);
+    padding: 10px 20px;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+    overflow: wrap;
+    width: 100%;
+    height: 64px;
+  
+    p {
+      font-size: 12px;
+      margin: 0;
+    }
+  
+    input[value] {
+      color: rgb(23, 23, 23);
+      font-size: 18px;
+      font-weight: 700;
+    }
+  
+    ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: rgb(201, 200, 201) !important;
+      font-weight: 400;
+      font-size: 17px;
+    }
+  }
+  
+  #guest {
+    max-width: 120px;
+  }
+  
+  .swapbox {
+    background-color: #ffffff;
+    width: 41px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: absolute;
+    left: 23.2%;
+    color: var(--blue);
+    border: 1px solid var(--black);
+    top: 10px;
+    z-index: 1000;
+  }
+  
+  .section1 {
+    position: relative;
+  
+    &::before {
+      content: '';
+      background-color: black;
+      width: 100%;
+      height: 65%;
+      position: absolute;
+      top: 0;
+    }
+  }
+  
+  .trip-card {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0px;
+  }
+  
+  .card-img img {
+    height: 64px;
+  }
+  
+  .line-box {
+    background-image: linear-gradient(120deg, #79f8b4 0%, #c7aa55 50%, #f44b03);
+    width: 100%;
+    height: 10px;
+    border-radius: 20px;
+  }
+  
+  input[type="date"] {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+  
+    &::-webkit-calendar-picker-indicator {
+      color: rgba(0, 0, 0, 0);
+      opacity: 1;
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-width: thin;
+      position: absolute;
+      left: 2%;
+      top: 36%;
+    }
+  }
+  
+  .cus-btn {
+    background-color: #ffbc55;
+    color: rgb(39, 38, 38);
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 19px 14px;
+    font-size: 16px;
+    box-shadow: none !important;
+    border-radius: 5px;
+  }
+  
+  .input-searchbox {
+    position: relative;
+    border: none;
+    outline: none;
+  
+    i {
+      position: absolute;
+      top: 11px;
+      left: 5px;
+    }
+  }
+  
+  .cus-control3 {
+    border-bottom: 1px solid gray !important;
+    padding: 5px 30px;
+    border-radius: 0;
+    box-shadow: none !important;
+  
+    > input[value] {
+      color: rgb(23, 23, 23);
+      font-size: 2px !important;
+    }
+  }
+  
+  .datePik {
+    input {
+      padding: 10px 20px;
+      height: 64px;
+      padding-left: 40px;
+      border: 1px solid var(--black);
+      border-radius: 5px !important;
+      width: 151px;
+    }
+  
+    input[readonly] {
+      background-color: transparent;
+      opacity: 1;
+    }
+  
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 24px;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+    }
+
+  }
+
+  .list-box{
+    display: flex;
+    gap:5px;
+    margin: 10px 0px;
+  }
+  .list-box img{
+    width: 23px;
+  }
+  .list-box p{
+    margin-bottom: 0;
+  }
+  .list-box p:nth-child(1){
+    font-weight: 700;
+    color: var(--black);
+  }
+  
+
+.navlink-tab-2{
+     background-color: var(--graybg)!important;
+     margin: 7px;
+     color: var(--black);
+     border: 1px solid gray;
+}
+.navlink-tab-2.active {
+    background-color: rgb(79 136 255 / 32%) !important;
+    border-color:  #1212a7;
+    color: blue!important;
+}
+
+.trip-card3 img{
+    height: 390px;
+}
+.trip-card2{
+    margin-bottom: 10px;
+}
+                                          
+.trip-card2 img {
+    height: 129px;
+}
+.list a{
+    color: var(--black);
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+ul{
+    padding: 0;
+}
+.list ul li{
+    list-style: none;padding:5px 10px;
+    border-radius: 5px
+}
+.list li:hover{
+    background-color:#ffbc553b;
+}
+.dropbox {
+    width: 300px;
+    position: absolute;
+    top: 79%;
+    left: 27%;
+    display: none;
+  
+}
+/*  */
+.list i{
+    margin: 0px 6px;
+}
+   /* media q */ 
+
+@media screen and (max-width:600px) {
+     
+  .tab-navlink {
+    background-color: transparent;
+    color: var(--black) !important;
+    font-size: 12px;
+  
+    &.active {
+      background-color: transparent !important;
+      color: var(--blue) !important;
+      border-bottom: 3px solid var(--blue) !important;
+      border-radius: 0;
+    }
+  }
+  .form-check-inline {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 12px;
+}
+
+.mainbox-input {
+    display:block;
+    margin: 10px;
+    grid-gap: 10px;
+    position: relative;
+}
+.swapbox {
+    background-color: #ffffff;
+    width: 41px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: absolute;
+    left: 43.2%;
+    color: var(--blue);
+    border: 1px solid var(--black);
+    top: 55px;
+    z-index: 1000;
+}
+.left-card{
+    margin:10px 0px;
+}
+.icon-card{
+    gap:10px;
+}
+
+.dropbox {
+    width: 300px;
+    position: absolute;
+    top: 40%;
+    left: 19%;
+    display: none;
+}
+select {
+    font-size: 12px;
+    top: -5px;
+    position: relative;
+    word-wrap: normal;
+}
+
+}
